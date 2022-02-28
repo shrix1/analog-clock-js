@@ -3,4 +3,4 @@
 js analog clock
 
 use can view this site here
-https://keen-carson-7664ce.netlify.app/
+https://js-analog-clock-project.netlify.app/
