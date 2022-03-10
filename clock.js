@@ -54,7 +54,6 @@ function clock() {
 }
 
 const vibe = document.querySelector(".vibeNotes");
-
 const vibeSetter = [
   "An early-morning walk is a blessing for the whole day.",
   "Today’s goals: Coffee and kindness. Maybe two coffees, and then kindness.",
@@ -72,6 +71,5 @@ function arrPlus() {
     i = 0;
   }
 }
-
 setInterval(clock, 1000);
 setInterval(arrPlus, 8000);
