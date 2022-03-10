@@ -18,6 +18,13 @@ main {
   height: 90vh;
   margin: auto;
   flex-wrap: wrap;
+  margin-top: -120px;
+}
+.title {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: capitalize;
+  font-size: 50px;
 }
 .clock {
   width: 600px;
@@ -36,12 +43,16 @@ main {
   width: 100%;
   height: 100%;
 }
+section .second {
+  background-color: black;
+  border: 0.5px solid rgb(255, 255, 255);
+}
 .hand {
   width: 47%;
   background-color: aliceblue;
-  /* border: 1px solid rgb(89, 152, 235); */
+  border: 0.5px solid rgb(0, 0, 0);
   height: 14px;
-  box-shadow: 2px 1px 6px rgba(14, 114, 228, 0.527);
+  /* box-shadow: 2px 1px 6px rgba(14, 114, 228, 0.527); */
   border-radius: 10px;
   position: absolute;
   top: 50%;
@@ -89,8 +100,15 @@ span:nth-child(4) {
 }
 .footer {
   text-align: center;
+  margin-top: -15px;
 }
 .footer a {
   text-decoration: none;
   color: rgb(85, 85, 85);
+}
+i {
+  color: rgb(0, 0, 0);
+}
+i:hover {
+  color: rgb(33, 114, 235);
 }
