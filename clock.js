@@ -9,7 +9,7 @@ function clock() {
   const now = new Date();
 
   const seconds = now.getSeconds();
-  const secondsDegrees = (seconds / 60) * 360 + 90; //1 sec is 60ms and *360(degree) + 90(css prop)
+  const secondsDegrees = (seconds / 60) * 360 + 90;
   secHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
   const minutes = now.getMinutes();
@@ -71,5 +71,6 @@ function arrPlus() {
     i = 0;
   }
 }
+
 setInterval(clock, 1000);
 setInterval(arrPlus, 8000);
