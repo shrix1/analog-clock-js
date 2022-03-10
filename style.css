@@ -1,11 +1,6 @@
 html {
   margin: 0;
   padding: 0;
-  /* background: linear-gradient(
-    90deg,
-    rgba(25, 127, 241, 1) 0%,
-    rgba(204, 167, 217, 1) 100%
-  ); */
   background-image: url(./painted.jpg);
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -52,7 +47,6 @@ section .second {
   background-color: aliceblue;
   border: 0.5px solid rgb(0, 0, 0);
   height: 14px;
-  /* box-shadow: 2px 1px 6px rgba(14, 114, 228, 0.527); */
   border-radius: 10px;
   position: absolute;
   top: 50%;
