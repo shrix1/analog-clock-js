@@ -50,12 +50,10 @@ function clock() {
   ];
   const month = monthName[now.getMonth()];
   const year = now.getFullYear();
-
   date.innerText = `${dates} : ${month} : ${year}`;
 }
 
 const vibe = document.querySelector(".vibeNotes");
-
 const vibeSetter = [
   "An early-morning walk is a blessing for the whole day.",
   "Today’s goals: Coffee and kindness. Maybe two coffees, and then kindness.",
@@ -65,7 +63,6 @@ const vibeSetter = [
 ];
 
 let i = 0;
-
 function arrPlus() {
   if (vibeSetter.length > i) {
     vibe.innerText = vibeSetter[i];
@@ -76,5 +73,4 @@ function arrPlus() {
 }
 
 setInterval(clock, 1000);
-
 setInterval(arrPlus, 8000);

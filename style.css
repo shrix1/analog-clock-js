@@ -15,12 +15,7 @@ main {
   flex-wrap: wrap;
   margin-top: -120px;
 }
-.title {
-  text-align: center;
-  margin-top: 30px;
-  text-transform: capitalize;
-  font-size: 50px;
-}
+
 .clock {
   width: 600px;
   height: 600px;
