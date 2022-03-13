@@ -1,6 +1,6 @@
 # javaScript analog clock
 
-js analog clock
+js Analog clock
 
-use can view this site here
+Use can view this Site here:
 https://js-analog-clock-project.netlify.app/
