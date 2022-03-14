@@ -3,4 +3,4 @@
 js Analog clock
 
 You can view this Site here:
-shri-clock.netlify.app
+https://shri-clock.netlify.app/
