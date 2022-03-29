@@ -15,7 +15,6 @@ main {
   flex-wrap: wrap;
   margin-top: -120px;
 }
-
 .clock {
   width: 600px;
   height: 600px;
@@ -98,7 +97,6 @@ span:nth-child(4) {
 }
 i {
   color: rgb(0, 0, 0);
-}
-i:hover {
+}i:hover {
   color: rgb(33, 114, 235);
 }
