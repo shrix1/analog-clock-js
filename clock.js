@@ -20,7 +20,7 @@ function clock() {
   const hourDegrees = ((hour / 12) * 360) + 90;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
-  time.innerText = `${hour} : ${minutes} : ${seconds}`;
+  time.innerText = `${hour % 12} : ${minutes} : ${seconds}`;
   console.log(`h>${hour} : m>${minutes} : s>${seconds}`)
 
   const weekDay = [
