@@ -1,5 +1,5 @@
 //selectors
-const secHand = document.querySelector(".second");
+const secondHand = document.querySelector(".second");
 const hourHand = document.querySelector(".hour");
 const minHand = document.querySelector(".min");
 const time = document.querySelector(".time");
@@ -13,7 +13,7 @@ function clock() {
   //second
   const seconds = now.getSeconds();
   const secondsDegrees = ((seconds / 60) * 360) + 90; 
-  secHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;  
 
   //min
   const minutes = now.getMinutes();
@@ -26,7 +26,7 @@ function clock() {
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
   time.innerText = `${hour % 12} : ${minutes} : ${seconds}`;
-  console.log(`h>${hour} : m>${minutes} : s>${seconds}`)
+  console.log(`h-${hour} : m-${minutes} : s-${seconds}`)
 
   const weekDay = [
     "Sunday",
@@ -61,24 +61,37 @@ function clock() {
 
 //vibenote every 8s
 const vibe = document.querySelector(".vibeNotes");
-const vibeSetter = [
-  "An early-morning walk is a blessing for the whole day.",
-  "Today’s goals: Coffee and kindness. Maybe two coffees, and then kindness.",
-  "Write it on your heart that every day is the best day in the year.",
-  "Every morning, I wake up saying, ‘I’m still alive, a miracle.’ And so I keep on pushing",
-  "If you’re changing the world, you’re working on important things. You’re excited to get up in the morning",
-];
 
-//arr++
-let i = 0;
-function arrPlus() {
-  if (vibeSetter.length > i) {
-    vibe.innerText = vibeSetter[i];
-    i++;
-  } else {
-    i = 0;
-  }
+// const vibeSetter = [
+//   "An early-morning walk is a blessing for the whole day.",
+//   "Today’s goals: Coffee and kindness. Maybe two coffees, and then kindness.",
+//   "Write it on your heart that every day is the best day in the year.",
+//   "Every morning, I wake up saying, ‘I’m still alive, a miracle.’ And so I keep on pushing",
+//   "If you’re changing the world, you’re working on important things. You’re excited to get up in the morning",
+// ];
+
+// //arr++
+// let i = 0;
+// function arrPlus() {
+//   if (vibeSetter.length > i) {
+//     vibe.innerText = vibeSetter[i];
+//     i++;
+//   } else {
+//     i = 0;
+//   }
+// }
+
+//api for random quotes generation
+function api(){
+  const data = fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
+
+  data
+    .then(r=>r.json())
+    .then(q=>{ 
+      vibe.innerText = q.quotes[0].text
+    })
 }
 
 setInterval(clock, 1000);//clock seconds pointer delay
-setInterval(arrPlus, 8000);//vibenotes changer
+setInterval(api, 8000);//vibenotes changer
+
