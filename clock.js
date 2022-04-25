@@ -7,7 +7,7 @@ const day = document.querySelector(".day");
 const date = document.querySelector(".date");
 
 //analog pointers func
-function clock() {
+const clock =()=> {
   const now = new Date();
  
   //second
@@ -82,7 +82,7 @@ const vibe = document.querySelector(".vibeNotes");
 // }
 
 //api for random quotes generation
-function api(){
+const api=()=>{
   const data = fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
 
   data
